@@ -48,8 +48,8 @@ const quizData = [
         answer: 1
     },
     {
-        question: "Who is the Governor of Ebonyi state?",
-        options: ["Ezenwo Nyesom Wike", "Samuel Ortom", "David Nweze Umahi", "Babajide Sanwolu"],
+        question: "Where is the Eiffel tower located?",
+        options: ["Ontario", "London", "Paris", "Abeokuta"],
         answer: 3
     },
     {

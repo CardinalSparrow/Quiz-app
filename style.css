@@ -15,7 +15,6 @@ input {
 
 #log {
 	align-content: center;
-	position: relative;
 	justify-content: center;
 	width: 400px;
     height: 300px;
@@ -24,7 +23,10 @@ input {
     border-radius: 20px;
     backdrop-filter: blur(15px);
 	padding-top: 100px;
-	overflow: hidden;
+}
+
+button, #option1, #option2, #option3, #option4 {
+	cursor: pointer;
 }
 
 #log p {
@@ -35,13 +37,6 @@ input {
 
 #log button {
 	margin-left: 210px;
-	cursor: pointer;
-}
-
-#log #reset {
-	position: absolute;
-	top: 175px;
-	right: 150px;
 }
 
 h1 {
