@@ -1,0 +1,92 @@
+.container {
+	max-width: 800px;
+	margin: auto;
+	padding-top: 20px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: grid;
+	
+}
+input {
+	border-radius: 8px;
+	height: 24px;
+}
+
+#log {
+	align-content: center;
+	position: relative;
+	justify-content: center;
+	width: 400px;
+    height: 300px;
+    background: rgba(25,25,25,0.3);
+    border: 3px solid rgba(25,25,25,0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+	padding-top: 100px;
+	overflow: hidden;
+}
+
+#log p {
+	font-size: 16px;
+	margin-top: 110px;
+	margin-left: 250px;
+}
+
+#log button {
+	margin-left: 210px;
+	cursor: pointer;
+}
+
+#log #reset {
+	position: absolute;
+	top: 175px;
+	right: 150px;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+#options {
+	font-size: 30px;
+	text-align: left;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	padding-top: 50px;
+	margin-bottom: 20px;
+	/* display: none; */
+}
+
+#options input {
+	margin-bottom: 20px;
+
+}
+
+button {
+	background-color:bisque;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-right: 10px;
+	border-radius: 8px;
+}
+
+p {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+#result {
+	margin-top: 50px;
+}
+
+.hidden {
+	display: none;
+}
