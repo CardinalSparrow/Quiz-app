@@ -31,31 +31,36 @@ const container = document.querySelector(".container");
 date.innerHTML = new Date().getFullYear();
 
 // Define the quiz questions and answers
-const quizData = [
+let quizData = [
     {
         question: "What is the capital of Nigeria?",
         options: ["Abuja", "Lagos", "Aso rock", "Makurdi"],
-        answer: 1
+        answer: 1,
+        correctAnswer: false
     },
     {
         question: "Who is the first president of Nigeria?",
         options: ["Bola Ahmed Tinubu","Dr. Nnamdi Azikiwe", "Gen. Muhammadu Buhari", "Alh. Shehu Shagari"],
-        answer: 2
+        answer: 2,
+        correctAnswer: false
     },
     {
         question: "How many states are in Nigeria?",
         options: ["36", "50", "37", "30"],
-        answer: 1
+        answer: 1,
+        correctAnswer: false
     },
     {
         question: "Where is the Eiffel tower located?",
         options: ["Ontario", "London", "Paris", "Abeokuta"],
-        answer: 3
+        answer: 3,
+        correctAnswer: false
     },
     {
         question: "Which of this is a coastal city?",
         options: ["Enugu", "Owerri", "Lagos", "Kebbi"],
-        answer: 3
+        answer: 3,
+        correctAnswer: false
     }
 ];
 
@@ -106,8 +111,9 @@ function checkAnswer() {
     }
     const selectedAnswer = parseInt(selectedOption.value);
     if (selectedAnswer === quizData[currentQuestion].answer) {
-        score++;
-        return;
+        quizData[currentQuestion].correctAnswer = true;
+    } else {
+        quizData[currentQuestion].correctAnswer = false;
     }
 }
 
@@ -124,11 +130,18 @@ function checkAnswer() {
 //     }
 // }
 
+//Calculate score by checking how many of the answers are correct
+function calculateScore() {
+    quizData.forEach((question) => {
+        if (question.correctAnswer === true) score++;
+    });
+}
 
 
 
 // End the quiz and show the result
 function endQuiz() {
+    calculateScore();
     clearInterval(timer);
         quiz.style.display = "none";
         resultEl.style.display = "inline";
