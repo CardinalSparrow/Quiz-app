@@ -16,8 +16,8 @@ input {
 #log {
 	align-content: center;
 	justify-content: center;
-	width: 400px;
-    height: 300px;
+/* 	width: 400px;
+    height: 300px; */
     background: rgba(25,25,25,0.3);
     border: 3px solid rgba(25,25,25,0.6);
     border-radius: 20px;
